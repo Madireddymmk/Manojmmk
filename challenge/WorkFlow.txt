@@ -1,0 +1,10 @@
+
+flow of work
+------------
+-> MoneyTransferController will accept the inputs form Json and bind the data to TransferBalanceRequest and
+   validate the input parameters. if any errors Occured error page will be displayed back.
+
+-> moneyTransferService.sendMoney(transferBalanceRequest) will take the parameters and calls the 
+   MoneyTransferServiceImpl where the transaction of money will takes place.    
+
+-> once the transaction is successful it will use the notification service and send the notification. 
