@@ -33,7 +33,7 @@ public class AccountsControllerTest {
 
   @Autowired
   private WebApplicationContext webApplicationContext;
-
+ 
   @Before
   public void prepareMockMvc() {
     this.mockMvc = webAppContextSetup(this.webApplicationContext).build();

@@ -33,7 +33,7 @@ public class AccountsRepositoryInMemory implements AccountsRepository {
   }
 
   
-  public void save(Account account) {	
+  public synchronized void save(Account account) {	
 		if (accounts.containsKey(account.getAccountId())) {	
 			accounts.replace(account.getAccountId(), account);	
 		}	
